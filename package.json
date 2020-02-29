@@ -1,6 +1,6 @@
 {
   "name": "angular-unit-test-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generating angular unit test",
   "keywords": [
     "angular",
@@ -17,7 +17,7 @@
   "scripts": {
     "start": "ts-node examples/index.ts",
     "build": "tsc && yarn copy:files",
-    "copy:files": "yarn copy:assets && cpx package.json dist && cpx 'src/aug.json' dist",
+    "copy:files": "yarn copy:assets && cpx package.json dist && cpx 'src/aug.json' dist  && cpx 'README.md' dist",
     "copy:assets": "cpx 'src/templates/**' dist/templates && cpx 'testing-utils/**' dist/testing-utils",
     "test": "jest --config jestconfig.json"
   },
