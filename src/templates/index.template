@@ -1,0 +1,20 @@
+import { createSpyObj, SpyObj } from '$spyUtilsPath$';
+import { $entityName$ } from '$entityPath$';
+$spyImports$
+
+describe('$entityName$', () => {
+  let $entityType$: $entityName$;
+$spyDeclarations$
+
+  beforeEach(() => {
+$spyInitializations$
+
+    $entityType$ = new $entityName$(
+$spyArguments$
+    );
+  });
+
+  it('should create $entityType$', () => {
+    expect($entityType$).toBeDefined();
+  });$methodsTests$
+});

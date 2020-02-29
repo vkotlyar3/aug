@@ -1,0 +1,5 @@
+  describe('#$methodName$', () => {
+    it('should do smth', () => {
+      $entityType$.$methodName$();
+    });
+  });
