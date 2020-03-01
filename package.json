@@ -1,7 +1,7 @@
 {
   "name": "angular-unit-test-generator",
   "description": "generating angular unit tests",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Vitalii Kotliar",
   "bin": {
     "aug": "./cli.js"
@@ -43,5 +43,6 @@
     "copy:files": "yarn copy:assets && cpx package.json dist && cpx 'src/aug.json' dist  && cpx 'README.md' dist",
     "start": "ts-node examples/index.ts",
     "test": "jest --config jestconfig.json"
-  }
+  },
+  "private": true
 }
